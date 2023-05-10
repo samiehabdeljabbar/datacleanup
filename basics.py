@@ -27,9 +27,33 @@ def check_win(player, computer):
     #below is an fstring
     print(f"You chose {player} and the computer chose {computer}")
     if player == computer:
-        return("it is a tie!")
+    elif player == "rock":
+        if computer == "scissors":
+            return "ROCK SMASHES SCISSORS! YOU WIN BABY"
+    else:
+        return "paper covers rock! you lose!"
+        
+    elif player == "paper":
+        if computer == "rock":
+            return "paper covers rock! YOU WIN BABY"
+        else:
+            return "scissors cuts paper! you lose!"
 
-check_win("rock", "paper")
+    elif player == "scissors":
+        if computer == "paper":
+            return "scissors cuts paper! YOU WIN BABY"
+        else:
+    return "rock crushes scissors! you lose!"
+
+choices = get_choices()
+
+    
+
+    
+ 
+
+
+
 
 
 
